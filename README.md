@@ -44,9 +44,9 @@ Xcode 10.2
 # Installation
 * Installation by cloning the repository
 * Go to directory
+* Open terminal, pod install.
+* NYTimes.xcworkspace
 * use command + B or Product -> Build to build the project
-* Incase of build fail due to dependency SDWebImageView, install SDWebImageView using CocoaPods.
-* Incase of build fail due to dependency ReachabilitySwift, install ReachabilitySwift using CocoaPods.
 * Press run icon in Xcode or command + R to run the project on Simulator.
 
 
