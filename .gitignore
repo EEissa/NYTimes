@@ -1,0 +1,23 @@
+# Xcode
+NYTimes/.DS_Store
+NYTimes/build/*
+NYTimes/build/*
+*.pbxuser
+NYTimes/!default.pbxuser
+NYTimes.mode1v3
+NYTimes/!default.mode1v3
+NYTimes.mode2v3
+NYTimes/!default.mode2v3
+NYTimes.perspectivev3
+NYTimes/!default.perspectivev3
+NYTimes/xcuserdata
+NYTimes/profile
+NYTimes.moved-aside
+NYTimes/DerivedData
+NYTimes/.idea/
+NYTimes/*.hmap
+NYTimes/*.xccheckout
+NYTimes/*.orig
+NYTimes/Pods/*
+NYTimes/Podfile.lock
+NYTimes/Pods
