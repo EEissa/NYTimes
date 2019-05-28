@@ -13,6 +13,17 @@ Simple app to hit the NY Times Most Popular Articles API and show a list of arti
 
 https://developer.nytimes.com/
 
+Topic demoestrate in this application
+---
+##### * Structure
+##### * MVP
+##### * Apple UX
+##  Demo
+---
+
+![Alt text](https://github.com/EEissa/NYTimes/blob/master/demo.gif?raw=true "sample")
+
+
 ## Environment
 ---
 ```ruby
