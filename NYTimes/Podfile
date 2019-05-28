@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+use_frameworks!
+
+def commonPods
+    pod 'Alamofire'
+    pod 'MBProgressHUD'
+    pod 'SDWebImage'
+    pod 'ObjectMapper'
+    pod 'RealmSwift'
+    pod 'SwiftyUserDefaults'
+    pod 'ObjectMapper+Realm'
+    pod 'SwiftLint'
+
+end
+
+target 'NYTimes' do
+	commonPods
+end
+
+target 'NYTimesTests' do
+  commonPods
+end
+
+target 'NYTimesUITests' do
+  commonPods
+end
