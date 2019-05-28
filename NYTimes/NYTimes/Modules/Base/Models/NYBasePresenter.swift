@@ -9,17 +9,33 @@
 
 import UIKit
 
-class NYBasePresenter<View> {
-  var view: View?
-  
-  func attach(this view: View) {
+protocol NYBasePresenter: class {
+  associatedtype T
+  var view: T? {get set}
+  func attach(this view: T)
+  func detach(this view: T)
+}
+
+extension NYBasePresenter {
+  func attach(this view: T) {
     self.view = view
   }
-  
-  func detach(this view: View) {
+  func detach(this view: T) {
     self.view = nil
   }
 }
+
+//class NYBasePresenter<View> {
+//  var view: View?
+//
+//  func attach(this view: View) {
+//    self.view = view
+//  }
+//
+//  func detach(this view: View) {
+//    self.view = nil
+//  }
+//}
 
 
 

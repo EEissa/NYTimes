@@ -13,14 +13,16 @@ protocol NYMostPopularView: NYBaseView {
   func showNews(_ news: [NYArticle])
 }
 
-protocol NYMostPopularActions {
+protocol NYMostPopularActions: NYBasePresenter {
+  associatedtype T = NYMostPopularView
   func onViewDidLoaded()
   func onViewDidMoreArticles()
   func onViewDidFilter(_ word: String?)
   func onViewDidRequestDetails(_ report: NYArticle)
 }
 
-class NYMostPopularPresenter: NYBasePresenter<NYMostPopularView>, NYMostPopularActions {
+class NYMostPopularPresenter: NYMostPopularActions {
+  weak var view: NYMostPopularView?
 
   var filtered: [NYArticle] = [] {
     didSet{

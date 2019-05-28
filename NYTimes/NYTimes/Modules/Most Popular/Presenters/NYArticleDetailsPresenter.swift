@@ -13,13 +13,16 @@ protocol NYArticleDetailsView: NYBaseView {
   func changeActivityIndicator(state visisble: Bool)
 }
 
-protocol NYArticleDetailsActions {
+protocol NYArticleDetailsActions: NYBasePresenter {
+  associatedtype T = NYArticleDetailsView
   func onViewDidLoaded()
   func onStartLoadingImage()
   func onStopLoadingImage()
 }
 
-class NYArticleDetailsPresenter: NYBasePresenter<NYArticleDetailsView>, NYArticleDetailsActions {
+class NYArticleDetailsPresenter: NYArticleDetailsActions {
+ weak var view: NYArticleDetailsView?
+  
   func onViewDidLoaded() {
     view?.pind()
   }
